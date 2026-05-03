@@ -1,4 +1,4 @@
-# kaivalya.github.io
+# kaivalya-mase.github.io
 Website of Kaivalya Mase
 https://kaivalya-mase.github.io/
 
