@@ -73,6 +73,22 @@
 											<li><a href="#" class="button big">Learn More</a></li>
 										</ul>
 										-->
+										<h2>Fracture mechanics term project [ME5610]</h2>
+										<p>We were tasked with building a surrogate ML model to reduce dependency on simulatons (and hopefully experiment) for determining the geometric factors in the calculation of the stress intensity factor (SIF) of a disc shaped compact trnsion specimen (DCT)</p>
+										<p>The project was done in pairs, consisting of two parts</p>
+										<p><ul>
+											<li>Automating simulations and extraction of data using Abaqus scripting capabilities</li>
+											<li>building the surrogate model for geometric factor prediction</li>
+										</ul></p>
+										<p>I worked on the automation of the simulations, writing a script for simulating 800 instances of the specimen, changing crack length and notch angle. The mesh used quad elements and had Barsoum elements around the crack tip to capture the stress singularity.</p>
+										<p>The ML model used polynomial regression as the SIF depended only on the crack length.</p>
+										<h4>Photos</h4>
+										<p style="text-align: center;">
+										<img src="assets/images/fracture_DCT_specimen.png" alt="schematic of the DCT specimen" style="width: 25%; height: 1 auto;">
+										<img src="assets/images/fracture_Simulation_Workflow.png" alt="simulation workflow loop" style="width: 40%; height: auto;">
+										</p>
+										
+
 										<h2>Inter-IIT Tech Meet 2025</h2>
 										<p><a href="https://www.interiit-tech.com/">Competition website</a></p>
 										<p>I participated in the high-prep problem statement posed by <a href="https://www.lat.com/">LAT Aerospace</a>, where we were challenged to design a high-lift wing concept to achieve a</p>
