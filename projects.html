@@ -44,6 +44,42 @@
 							<!-- Projects-->
 								<section id = "projects">
 									<div class = "content">
+
+										<h2>Fracture Mechanics - Prediction of Geometric Factors of a Double Compact Tension Specimen</h2>
+										<p>We were tasked with building a surrogate ML model to reduce dependency on simulatons for determining the geometric factors in the calculation of the stress intensity factor (SIF) of a disc shaped compact trnsion specimen (DCT)</p>
+										<p>The project was done in pairs, consisting of two parts:</p>
+										<p><ul>
+											<li>Automating simulations and extraction of data using Abaqus scripting capabilities</li>
+											<li>Building the surrogate model for geometric factor prediction</li>
+										</ul></p>
+										<p>I worked on the automation of the simulations, writing a script for simulating 800 instances of the specimen, changing crack length and notch angle. The global mesh used quad elements with Barsoum elements around the crack tip to capture the stress singularity.</p>
+										<p>The ML model used polynomial regression as the SIF depended only on the crack length.</p>
+										<h4>Photos</h4>
+										<p style="text-align: center;">
+										<img src="assets/images/fracture_DCT_specimen.png" alt="schematic of the DCT specimen" style="width: 25%; height: 1 auto;">
+										<img src="assets/images/fracture_Simulation_Workflow.png" alt="simulation workflow loop" style="width: 40%; height: auto;">
+										</p>
+
+										
+
+										<h2>Inter-IIT Tech Meet 2025</h2>
+										<p>I participated in the high-prep problem statement posed by <a href="https://www.lat.com/">LAT Aerospace</a>, where we were challenged to design a high-lift wing concept to achieve a</p>
+										<p><ul>
+											<li>maximum lift coefficient of at least 6.5</li>
+											<li>minimum lift-drag ratio of 5 at takeoff and 20 at cruise.</li>
+										</ul></p>
+										<p>
+											I worked on the CFD validation of the airfoil along with two other members, setting mesh geometry near and beyond the airfoil and performing a mesh convergence study. 
+											An important modeling choice differentiating our solution was incorporating the propeller as a '<b>momentum source</b>'. However, this choice led us to not ignore swirl effects in the flow.
+											The final design was an albatross-inspired biomimetic blown-wing with a flap.
+											We placed fourth out of twenty-three participating IITs in the problem statement.
+										</p>
+										<h4>Photos</h4>
+										<p style="text-align: center;">
+										<img src="assets/images/wing_top.jpeg" alt="top view of the wing" style="width: 20%; height: 1 auto;">
+										<img src="assets/images/wing.jpeg" alt="isometric (hopefully) view of the product" style="width: 20%; height: auto;">
+										</p>
+										
 										<h2>Formula SAE</h2>
 										<h3><a href="https://aeolus.iith.ac.in/">Aeolus Racing</a> IIT Hyderabad</h3>
 										<p>I led a team of five students to design a chassis with safety and regulatory considerations. 
@@ -51,18 +87,9 @@
 											We participated in <a href="https://www.suprasaeindia.org/">Supra SAE India 2025</a> -  unfortunately our chassis was found to violate several rules, and therefore we did not get the Technical Inspection stickers.</p>
 										<h4>Project highlights</h4>
 										<p><ul>
-											<li>Dimensions: TBA</li>
 											<li>Used AISI 1010 steel for the frame, welded using MIG welding process</li>
 											<li>Torsional stiffness of ~1150 N-m/deg</li>
 											<li>Deformation of less than 4mm on a simulated 3g load</li>
-										</ul></p>
-										<h4>Future improvements</h4>
-										<p><ul>
-											<li>Regulatory compliance</li>
-											<li>Ansys for simulations</li>
-											<li>Simulation of brackets holding harness, battery, and especially suspension mounts</li>
-											<li>Incorporation of welds in the geometry</li>
-											<li>Ergonomics rig for driver positioning and comfort evaluation</li>
 										</ul></p>
 										<h4>Photos</h4>
 										<p style="text-align: center;">
@@ -74,37 +101,9 @@
 											<li><a href="#" class="button big">Learn More</a></li>
 										</ul>
 										-->
-										<h2>Fracture mechanics term project [ME5610]</h2>
-										<p>We were tasked with building a surrogate ML model to reduce dependency on simulatons (and hopefully experiment) for determining the geometric factors in the calculation of the stress intensity factor (SIF) of a disc shaped compact trnsion specimen (DCT)</p>
-										<p>The project was done in pairs, consisting of two parts</p>
-										<p><ul>
-											<li>Automating simulations and extraction of data using Abaqus scripting capabilities</li>
-											<li>building the surrogate model for geometric factor prediction</li>
-										</ul></p>
-										<p>I worked on the automation of the simulations, writing a script for simulating 800 instances of the specimen, changing crack length and notch angle. The mesh used quad elements and had Barsoum elements around the crack tip to capture the stress singularity.</p>
-										<p>The ML model used polynomial regression as the SIF depended only on the crack length.</p>
-										<h4>Photos</h4>
-										<p style="text-align: center;">
-										<img src="assets/images/fracture_DCT_specimen.png" alt="schematic of the DCT specimen" style="width: 25%; height: 1 auto;">
-										<img src="assets/images/fracture_Simulation_Workflow.png" alt="simulation workflow loop" style="width: 40%; height: auto;">
-										</p>
 										
 
-										<h2>Inter-IIT Tech Meet 2025</h2>
-										<p>I participated in the high-prep problem statement posed by <a href="https://www.lat.com/">LAT Aerospace</a>, where we were challenged to design a high-lift wing concept to achieve a</p>
-										<p><ul>
-											<li>maximum lift coefficient of at least 6.5</li>
-											<li>minimum lift-drag ratio of 5 at takeoff and 20 at cruise.</li>
-										</ul></p>
-										<p>I worked on the CFD validation of the airfoil along with two other members, setting mesh geometry near and beyond the airfoil and performing a mesh convergence study. 
-											The final design was an albatross-inspired biomimetic wing. We placed fourth out of twenty-three participating IITs in the problem statement.</p>
-										<h4>Photos</h4>
-										<p style="text-align: center;">
-										<img src="assets/images/wing_top.jpeg" alt="top view of the wing" style="width: 20%; height: 1 auto;">
-										<img src="assets/images/wing.jpeg" alt="isometric (hopefully) view of the product" style="width: 20%; height: auto;">
-										</p>
-
-										<h2>Mini-project [ME3425]</h2>
+										<h2>Mini-project</h2>
 										<p>The goal of the course was to create a product which involved applying concepts learned in class, which preferably solved a problem.</p>
 										<p>My group settled on a <a href='https://en.wikipedia.org/wiki/Gumball_machine'>gumball machine</a> inspired <a href='https://en.wikipedia.org/wiki/Peristaltic_pump'>peristaltic pump</a>, intended to dispense fluids such as laundry detergent.</p>
 										<p>The prototype was demonstrated using water.</p>
